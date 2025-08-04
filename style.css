@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Modern font for elegance */
+}
+
+body {
+    background-color: rgb(34, 34, 44); /* Slightly darker for contrast */
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: rgb(48, 48, 58); /* Softer contrast for containers */
+    padding: 30px;
+    border-radius: 12px; /* Rounded corners for smoother visuals */
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: rgb(102, 255, 102); /* Vibrant green accent for the header */
+    margin-bottom: 1rem;
+}
+
+.user-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+
+.user-input-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#user-input {
+    flex-grow: 1;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid rgb(40, 177, 40); /* Green border for focus */
+    background-color: rgb(34, 34, 44); /* Blends with the background */
+    color: white;
+    outline: none;
+}
+
+#search-btn {
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    border: none;
+    background-color: rgb(40, 177, 40); /* Consistent green theme */
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#search-btn:hover {
+    background-color: rgb(30, 150, 30); /* Slightly darker on hover */
+    transform: scale(1.05); /* Subtle pop effect */
+}
+
+.circle {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: white; /* Text color for contrast */
+    background: conic-gradient(green var(--progress-degree, 0%), rgb(32, 41, 33) 0%);
+    box-shadow: 0 2px 6px rgba(0, 255, 0, 0.5); /* Glowing circle effect */
+}
+
+.circle span {
+    position: relative;
+    z-index: 2;
+}
+
+.progress {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.stats-container {
+    color: lightgreen; /* Subtle text color for consistency */
+    display: block;
+    padding: 15px; /* Added padding for spacing */
+    border-radius: 8px;
+}
